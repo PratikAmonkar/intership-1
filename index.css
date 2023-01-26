@@ -12,16 +12,26 @@ body {
   width: 100%;
   height: auto;
   background-color: #317773;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: repeat(1,1fr);
 }
 
 .header_section p {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 3rem;
+  padding: 70px 0;
   text-align: center;
-  padding-left: 5%;
-  padding-top: 2%;
+  color: white;
 }
+.header_section img{
+  border-radius:50% ;
+  width: 50%;
+  height: auto;
+  margin-top: 20px;
+}
+
 
 .header_img img {
   margin-left: 10%;
@@ -39,6 +49,7 @@ body {
   padding: 1px 10px;
   font-size: 2rem;
   background-color: #317773;
+  color: white;
 }
 
 .contact-section-div {
@@ -60,6 +71,7 @@ body {
   padding: 1px 10px;
   font-size: 2rem;
   background-color: #317773;
+  color: white;
 }
 
 .description_section p {
@@ -83,6 +95,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   background-color: #317773;
+  color: white;
 }
 
 .information_section li {
@@ -120,6 +133,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   background-color: #317773;
+  color: white;
 }
 
 .experience_section_div {
@@ -152,14 +166,27 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+
+  .header_section {
+    width: 100%;
+    height: auto;
+    background-color: #317773;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+  }
   
   .header_section p {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 2rem;
     text-align: center;
     padding-top: 2%;
     padding-bottom: 2%;
+  }
+
+  .header_section img{
+    margin: 8% auto;
   }
 
   .personal_section {
@@ -189,6 +216,14 @@ body {
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(1, 1fr);
     margin-top: 20px;
+  }
+
+  .information_section h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #317773;
+    color: white;
   }
 
   .information_section .skills_section li{
